@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #08d3c943;
+            color: #000000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #225166eb;
+            color: #e7e7e7;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Cursive', sans-serif;
+            color: #ffdd57;
+        }
+
+        .nav-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5em;
+            color: #ffffffd1;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #ffffffd1;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #fffffff0;
+            color: #000000;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .section {
+            width: 40%;
+            background-color: #62d2b27c;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(20, 35, 32, 0.512);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(18, 18, 18, 0.238);
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            color: #06115f;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .skill-bar {
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+
+        .skill-html { background-color: #f06529; width: 70%; }
+        .skill-css { background-color: #2965f1; width: 50%; }
+        .skill-js { background-color: #f7df1e; width: 20%; }
+        .skill-python { background-color: #306998; width: 80%; }
+
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+            background: transparent; /* Ensures no background */
+        }
+
+        .photo img {
+            width: 80px; /* Further reduced size */
+            height: auto; /* Keeps the aspect ratio */
+            border-radius: 10px; /* Rectangular corners */
+            border: 5px solid #000000cd;
+            background: transparent; /* Ensures no background */
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="C:\Users\Admin\OneDrive\Pictures\MY LOGO.jpg">
+        </div>
+        <div class="nav-center">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <div class="photo">
+                <img src="C:\Users\Admin\Downloads\my photo2.jpeg" alt="Your Photo">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Personal Details</h2>
+            <p><strong>Name:</strong> Atharva Birwadkar</p>
+            <p><strong>Email:</strong> atharva.birwadkar@vit.edu.in</p>
+            <p><strong>Phone No:</strong> 7304361951</p>
+            <p><strong>Ocupattion:</strong> Student</p>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    HTML
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill skill-html"></div>
+                    </div>
+                </li>
+                <li>
+                    CSS
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill skill-css"></div>
+                    </div>
+                </li>
+                <li>
+                    JavaScript
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill skill-js"></div>
+                    </div>
+                </li>
+                <li>
+                    Python
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill skill-python"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a third-year Computer Engineering student specializing in Data Analytics. My academic journey has equipped me with a strong foundation in both theoretical and practical aspects of computer science, with a keen focus on data-driven decision-making.</p>
+            <p>In addition to my studies, I am passionate about finance and the stock market. This interest drives me to continually learn about market trends, investment strategies, and financial technologies.</p>
+            <p>My goal is to merge my technical expertise in data analytics with my passion for finance, aiming to contribute to innovative solutions in the fintech industry.</p>
+        </div>
+    </div>
+</body>
+</html>
